@@ -5,7 +5,6 @@ const axios = require('axios');
 const app = express();
 const fs = require('fs');
 
-const log = JSON.parse(fs.readFileSync('log.txt', 'utf8'));
 
 app.use(express.json());
 app.use(cors({ methods: ['GET', 'POST'] }));
